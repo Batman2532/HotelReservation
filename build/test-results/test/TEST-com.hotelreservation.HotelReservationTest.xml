@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hotelreservation.HotelReservationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-21T04:01:48" hostname="BATMAN" time="0.037">
+<testsuite name="com.hotelreservation.HotelReservationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-21T05:16:42" hostname="BATMAN" time="0.071">
   <properties/>
-  <testcase name="givenDate_shouldReturnLakeWood()" classname="com.hotelreservation.HotelReservationTest" time="0.037"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="given3Hotels_shouldBeAbleToReturnCheapestHotel()" classname="com.hotelreservation.HotelReservationTest" time="0.065"/>
+  <testcase name="givenDate_shouldReturnLakeWood()" classname="com.hotelreservation.HotelReservationTest" time="0.004"/>
+  <system-out><![CDATA[Cheapest Hotel is Bridgewood :330
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

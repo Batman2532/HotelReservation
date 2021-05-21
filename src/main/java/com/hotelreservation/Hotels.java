@@ -3,12 +3,12 @@ package com.hotelreservation;
 public class Hotels {
     // Parameters
     private String hotelName;
-    private int regularRate;
+    private int rate;
 
     //Parameterized Constructor
-    public Hotels(String hotelName, int regularRate) {
+    public Hotels(String hotelName, int rate) {
         this.hotelName = hotelName;
-        this.regularRate = regularRate;
+        this.rate = rate;
     }
 
     // Getter And Setter Methods
@@ -20,11 +20,11 @@ public class Hotels {
         this.hotelName = hotelName;
     }
 
-    public int getRegularRate() {
-        return regularRate;
+    public int getRate() {
+        return rate;
     }
 
-    public void setRegularRate(int regularRate) {
-        this.regularRate = regularRate;
+    public void setRate(int regularRate) {
+        this.rate = rate;
     }
 }
