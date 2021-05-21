@@ -1,4 +1,4 @@
-com/hotelreservation/Hotel.java
- com.hotelreservation.Hotel
+com/hotelreservation/Hotels.java
+ com.hotelreservation.Hotels
 com/hotelreservation/HotelReservation.java
  com.hotelreservation.HotelReservation

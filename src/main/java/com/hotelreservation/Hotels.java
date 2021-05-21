@@ -1,12 +1,12 @@
 package com.hotelreservation;
 
-public class Hotel {
+public class Hotels {
     // Parameters
     private String hotelName;
     private int regularRate;
 
     //Parameterized Constructor
-    public Hotel(String hotelName, int regularRate) {
+    public Hotels(String hotelName, int regularRate) {
         this.hotelName = hotelName;
         this.regularRate = regularRate;
     }
