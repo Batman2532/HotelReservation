@@ -7,9 +7,9 @@ import java.util.List;
 
 public class HotelReservationServiceTest {
     HotelReservationService hotelReservationService = new HotelReservationService();
-    Hotels Lakewood = new Hotels("Lakewood",110,90);
-    Hotels Bridgewood = new Hotels("Bridgewood",150,50);
-    Hotels RidgeWood = new Hotels("Ridgewood",220,150);
+    Hotels Lakewood = new Hotels("Lakewood",110,90,3);
+    Hotels Bridgewood = new Hotels("Bridgewood",150,50,4);
+    Hotels RidgeWood = new Hotels("Ridgewood",220,150,5);
 
     @Test
     public void givenDate_shouldReturnLakeWood() {

@@ -5,12 +5,13 @@ public class Hotels {
     private String hotelName;
     private int weekdaysRates;
     private int weekendRates;
-
+    private int rating;
     //Parameterized Constructor
-    public Hotels(String hotelName, int weekdaysRates, int weekendRates){
+    public Hotels(String hotelName, int weekdaysRates, int weekendRates, int rating){
         this.hotelName = hotelName;
         this.weekdaysRates = weekdaysRates;
         this.weekendRates = weekendRates;
+        this.rating = rating;
 }
     // Getter And Setter Methods
     public String getHotelName() {
