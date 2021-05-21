@@ -3,7 +3,7 @@ package com.hotelreservation;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class HotelReservation {
+public class HotelReservationService {
     List<Hotels> hotelList = new ArrayList<>();
     Map<String, Integer> costOfHotels = new HashMap<>();
 
@@ -19,14 +19,12 @@ public class HotelReservation {
         String dayEnd = dateCheckOut.substring(0, 2);
         int checkOutDay = Integer.parseInt(dayEnd);
         int numberOfDays = checkOutDay - checkInDay;
-        costOfHotels = hotelList.stream().collect(Collectors.toMap(e -> e.getHotelName(), e -> e.getRate() * numberOfDays));
-        String hotel = Collections.min(costOfHotels.keySet());
-        int cost = costOfHotels.get(hotel);
-        System.out.println("Cheapest Hotel is " + hotel + " :" + cost);
-        return cost;
+        costOfHotels = hotelList.stream().collect(Collectors.toMap(Hotels::getHotelName, e -> e.getWeekdaysRates() * numberOfDays));
+        return Collections.min(costOfHotels.values());
     }
 
     public List<Hotels> getHotels() {
         return hotelList;
     }
+
 }
