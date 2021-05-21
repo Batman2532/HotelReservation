@@ -30,6 +30,6 @@ public class HotelReservationServiceTest {
         hotelReservationService.addHotelDetails(Bridgewood);
         hotelReservationService.addHotelDetails(RidgeWood);
         int cheapestHotel = hotelReservationService.findCheapestHotel("20May2021","23May2021");
-        Assertions.assertEquals(30,cheapestHotel);
+        Assertions.assertEquals(330,cheapestHotel);
     }
 }
